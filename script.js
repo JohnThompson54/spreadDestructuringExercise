@@ -83,3 +83,38 @@ const netflixMovies = {
   // 4f
   console.log(nat, others);
 
+  / BONUS
+  const bonus = {
+    first: [1, 2, 3],
+    second: [4, 5, 6],
+    third: [7, 8, 9]
+  };
+  
+  // 5a
+  const all = [
+    ...bonus["first"],
+    ...bonus["second"],
+    ...bonus["third"]
+  ];
+  // OR
+  // const all = [
+  //   ...bonus.first,
+  //   ...bonus.second,
+  //   ...bonus.third
+  // ];
+  console.log(all);
+  
+  // 5b
+  const {first, second, third} = bonus;
+  const [one, two, three] = first;
+  const [four, five, six] = second;
+  const [seven, eight, nine] = third;
+  // OR
+  // const [one, two, three] = bonus.first;
+  // const [four, five, six] = bonus.second;
+  // const [seven, eight, nine] = bonus.third;
+  
+  console.log(one, two, three, four, five, six, seven, eight, nine);
+  
+  // Destructuring the ALL array
+  // const [one, two, three, four, five, six, seven, eight, nine] = all;
